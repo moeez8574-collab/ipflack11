@@ -6,3 +6,4 @@ coverage/
 *.log
 .env*
 !.env.example
+ipflack-a6617-firebase-adminsdk-fbsvc-13a8827798.json
