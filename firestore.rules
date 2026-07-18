@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // By default, deny all direct frontend access as the application uses a secure
+    // Express backend to proxy and mediate all database transactions and authentication.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

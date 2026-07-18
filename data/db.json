@@ -1,0 +1,3732 @@
+{
+  "users": [
+    {
+      "id": "creator_demo",
+      "email": "creator@ipflack.online",
+      "phone": "+15551234567",
+      "name": "Sarah Jenkins",
+      "role": "creator",
+      "password": "password123",
+      "isEmailVerified": true,
+      "isPhoneVerified": true,
+      "createdAt": "2026-06-18T10:35:49.851Z",
+      "socials": {
+        "facebook": "https://facebook.com/sarahjenkins.creator",
+        "instagram": "sarah_jenkins_official",
+        "youtube": "https://youtube.com/@sarahjenkins"
+      }
+    },
+    {
+      "id": "admin_demo",
+      "email": "admin@ipflack.online",
+      "phone": "+15559876543",
+      "name": "Admin IPFLACK",
+      "role": "admin",
+      "password": "password123",
+      "isEmailVerified": true,
+      "isPhoneVerified": true,
+      "createdAt": "2026-06-18T10:35:49.852Z"
+    },
+    {
+      "id": "admin_gmail",
+      "email": "ipflack.pvt@gmail.com",
+      "phone": "+15550001122",
+      "name": "Admin Gmail",
+      "role": "admin",
+      "password": "password123",
+      "isEmailVerified": true,
+      "isPhoneVerified": true,
+      "createdAt": "2026-06-18T10:35:49.852Z"
+    },
+    {
+      "id": "user_1784374162884",
+      "email": "moeez8574@gmail.com",
+      "phone": "+923705705660",
+      "name": "moeez moeez",
+      "role": "creator",
+      "password": "12345678",
+      "isEmailVerified": false,
+      "isPhoneVerified": false,
+      "emailVerificationCode": "318662",
+      "phoneOtpCode": "889372",
+      "createdAt": "2026-07-18T11:29:22.884Z",
+      "socials": {
+        "facebook": "https://www.facebook.com/groups/iosbeta/posts/1496910577949152/",
+        "instagram": "instagram.com",
+        "youtube": "youtube.com"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "link1",
+      "userId": "creator_demo",
+      "originalUrl": "https://www.walmart.com/ip/HP-15-6-Laptop-Intel-Core-i3-8GB-Memory-256GB-SSD/51234567",
+      "trackedUrl": "https://www.walmart.com/ip/HP-15-6-Laptop-Intel-Core-i3-8GB-Memory-256GB-SSD/51234567?affp1=IPFLACK_TRACKING_ID",
+      "shortCode": "hp-laptop",
+      "shortUrl": "https://ipflack.online/hp-laptop",
+      "customAlias": "hp-laptop",
+      "title": "HP 15.6\" Laptop - Core i3, 8GB RAM",
+      "createdAt": "2026-07-03T10:35:49.852Z",
+      "isPasswordProtected": false,
+      "totalClicks": 4210
+    },
+    {
+      "id": "link2",
+      "userId": "creator_demo",
+      "originalUrl": "https://www.walmart.com/ip/Apple-iPad-10-2-inch-Wi-Fi-64GB-Space-Gray/98765432",
+      "trackedUrl": "https://www.walmart.com/ip/Apple-iPad-10-2-inch-Wi-Fi-64GB-Space-Gray/98765432?affp1=IPFLACK_TRACKING_ID",
+      "shortCode": "ipad-deal",
+      "shortUrl": "https://ipflack.online/ipad-deal",
+      "customAlias": "ipad-deal",
+      "title": "Apple iPad 10.2\" Wi-Fi 64GB Space Gray",
+      "createdAt": "2026-07-08T10:35:49.852Z",
+      "isPasswordProtected": false,
+      "totalClicks": 8430
+    },
+    {
+      "id": "link3",
+      "userId": "creator_demo",
+      "originalUrl": "https://www.walmart.com/ip/Sony-WH-1000XM4-Wireless-Noise-Canceling-Over-Ear-Headphones/24681357",
+      "trackedUrl": "https://www.walmart.com/ip/Sony-WH-1000XM4-Wireless-Noise-Canceling-Over-Ear-Headphones/24681357?affp1=IPFLACK_TRACKING_ID",
+      "shortCode": "sony-xm4",
+      "shortUrl": "https://ipflack.online/sony-xm4",
+      "customAlias": "sony-xm4",
+      "title": "Sony WH-1000XM4 Wireless Headphones",
+      "createdAt": "2026-07-13T10:35:49.852Z",
+      "isPasswordProtected": true,
+      "password": "123",
+      "totalClicks": 5760
+    }
+  ],
+  "clicks": [
+    {
+      "id": "click_0",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-18T10:35:49.852Z",
+      "ip": "192.168.0.84",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_1",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-18T09:35:49.852Z",
+      "ip": "192.168.1.243",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_2",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-18T08:35:49.852Z",
+      "ip": "192.168.2.102",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_3",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-18T07:35:49.852Z",
+      "ip": "192.168.3.191",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_4",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-18T06:35:49.852Z",
+      "ip": "192.168.4.96",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_5",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-18T05:35:49.852Z",
+      "ip": "192.168.5.118",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_6",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-18T04:35:49.852Z",
+      "ip": "192.168.6.32",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_7",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-18T03:35:49.852Z",
+      "ip": "192.168.7.247",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_8",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-18T02:35:49.852Z",
+      "ip": "192.168.8.117",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_9",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-18T01:35:49.852Z",
+      "ip": "192.168.9.250",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_10",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-17T00:35:49.852Z",
+      "ip": "192.168.10.49",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_11",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-16T23:35:49.852Z",
+      "ip": "192.168.11.195",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_12",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-16T22:35:49.852Z",
+      "ip": "192.168.12.218",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_13",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-16T21:35:49.852Z",
+      "ip": "192.168.13.80",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_14",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-16T20:35:49.852Z",
+      "ip": "192.168.14.97",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_15",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-16T19:35:49.852Z",
+      "ip": "192.168.15.60",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_16",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-16T18:35:49.852Z",
+      "ip": "192.168.16.190",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_17",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-16T17:35:49.852Z",
+      "ip": "192.168.17.205",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_18",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-16T16:35:49.852Z",
+      "ip": "192.168.18.251",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_19",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-16T15:35:49.852Z",
+      "ip": "192.168.19.124",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_20",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-15T14:35:49.852Z",
+      "ip": "192.168.20.237",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_21",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-15T13:35:49.852Z",
+      "ip": "192.168.21.71",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_22",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-15T12:35:49.852Z",
+      "ip": "192.168.22.142",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_23",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-15T11:35:49.852Z",
+      "ip": "192.168.23.215",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_24",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-16T10:35:49.852Z",
+      "ip": "192.168.24.140",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_25",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-16T09:35:49.852Z",
+      "ip": "192.168.25.131",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_26",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-16T08:35:49.852Z",
+      "ip": "192.168.26.102",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_27",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-16T07:35:49.852Z",
+      "ip": "192.168.27.177",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_28",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-16T06:35:49.852Z",
+      "ip": "192.168.28.154",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_29",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-16T05:35:49.852Z",
+      "ip": "192.168.29.28",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_30",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-15T04:35:49.852Z",
+      "ip": "192.168.30.203",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_31",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-15T03:35:49.852Z",
+      "ip": "192.168.31.252",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_32",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-15T02:35:49.852Z",
+      "ip": "192.168.32.236",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_33",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-15T01:35:49.852Z",
+      "ip": "192.168.33.152",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_34",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-15T00:35:49.852Z",
+      "ip": "192.168.34.26",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_35",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-14T23:35:49.852Z",
+      "ip": "192.168.35.107",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_36",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-14T22:35:49.852Z",
+      "ip": "192.168.36.81",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_37",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-14T21:35:49.852Z",
+      "ip": "192.168.37.166",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_38",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-14T20:35:49.852Z",
+      "ip": "192.168.38.158",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_39",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-14T19:35:49.852Z",
+      "ip": "192.168.39.3",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_40",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-13T18:35:49.852Z",
+      "ip": "192.168.40.50",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_41",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-13T17:35:49.852Z",
+      "ip": "192.168.41.82",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_42",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-13T16:35:49.852Z",
+      "ip": "192.168.42.159",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_43",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-13T15:35:49.852Z",
+      "ip": "192.168.43.232",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_44",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-13T14:35:49.852Z",
+      "ip": "192.168.44.191",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_45",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-13T13:35:49.852Z",
+      "ip": "192.168.45.68",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_46",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-13T12:35:49.852Z",
+      "ip": "192.168.46.57",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_47",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-13T11:35:49.852Z",
+      "ip": "192.168.47.39",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_48",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-14T10:35:49.852Z",
+      "ip": "192.168.48.236",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_49",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-14T09:35:49.852Z",
+      "ip": "192.168.49.224",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_50",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-13T08:35:49.852Z",
+      "ip": "192.168.50.79",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_51",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-13T07:35:49.852Z",
+      "ip": "192.168.51.129",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_52",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-13T06:35:49.852Z",
+      "ip": "192.168.52.14",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_53",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-13T05:35:49.852Z",
+      "ip": "192.168.53.132",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_54",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-13T04:35:49.852Z",
+      "ip": "192.168.54.55",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_55",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-13T03:35:49.852Z",
+      "ip": "192.168.55.5",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_56",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-13T02:35:49.852Z",
+      "ip": "192.168.56.30",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_57",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-13T01:35:49.852Z",
+      "ip": "192.168.57.184",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_58",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-13T00:35:49.852Z",
+      "ip": "192.168.58.105",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_59",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-12T23:35:49.852Z",
+      "ip": "192.168.59.45",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_60",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-11T22:35:49.852Z",
+      "ip": "192.168.60.240",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_61",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-11T21:35:49.852Z",
+      "ip": "192.168.61.120",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_62",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-11T20:35:49.852Z",
+      "ip": "192.168.62.229",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_63",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-11T19:35:49.852Z",
+      "ip": "192.168.63.42",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_64",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-11T18:35:49.852Z",
+      "ip": "192.168.64.27",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_65",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-11T17:35:49.852Z",
+      "ip": "192.168.65.233",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_66",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-11T16:35:49.852Z",
+      "ip": "192.168.66.245",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_67",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-11T15:35:49.852Z",
+      "ip": "192.168.67.136",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_68",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-11T14:35:49.852Z",
+      "ip": "192.168.68.167",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_69",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-11T13:35:49.852Z",
+      "ip": "192.168.69.36",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_70",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-10T12:35:49.852Z",
+      "ip": "192.168.70.45",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_71",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-10T11:35:49.852Z",
+      "ip": "192.168.71.3",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_72",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-11T10:35:49.852Z",
+      "ip": "192.168.72.38",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_73",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-11T09:35:49.852Z",
+      "ip": "192.168.73.254",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_74",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-11T08:35:49.852Z",
+      "ip": "192.168.74.122",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_75",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-11T07:35:49.852Z",
+      "ip": "192.168.75.43",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_76",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-11T06:35:49.852Z",
+      "ip": "192.168.76.202",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_77",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-11T05:35:49.852Z",
+      "ip": "192.168.77.215",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_78",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-11T04:35:49.852Z",
+      "ip": "192.168.78.213",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_79",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-11T03:35:49.852Z",
+      "ip": "192.168.79.189",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_80",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-10T02:35:49.852Z",
+      "ip": "192.168.80.99",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_81",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-10T01:35:49.852Z",
+      "ip": "192.168.81.228",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_82",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-10T00:35:49.852Z",
+      "ip": "192.168.82.19",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_83",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-09T23:35:49.852Z",
+      "ip": "192.168.83.104",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_84",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-09T22:35:49.852Z",
+      "ip": "192.168.84.1",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_85",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-09T21:35:49.852Z",
+      "ip": "192.168.85.111",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_86",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-09T20:35:49.852Z",
+      "ip": "192.168.86.167",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_87",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-09T19:35:49.852Z",
+      "ip": "192.168.87.128",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_88",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-09T18:35:49.852Z",
+      "ip": "192.168.88.143",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_89",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-09T17:35:49.852Z",
+      "ip": "192.168.89.233",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_90",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-08T16:35:49.852Z",
+      "ip": "192.168.90.44",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_91",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-08T15:35:49.852Z",
+      "ip": "192.168.91.177",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_92",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-08T14:35:49.852Z",
+      "ip": "192.168.92.225",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_93",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-08T13:35:49.852Z",
+      "ip": "192.168.93.201",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_94",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-08T12:35:49.852Z",
+      "ip": "192.168.94.211",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_95",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-08T11:35:49.852Z",
+      "ip": "192.168.95.248",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_96",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-09T10:35:49.852Z",
+      "ip": "192.168.96.192",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_97",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-09T09:35:49.852Z",
+      "ip": "192.168.97.207",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_98",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-09T08:35:49.852Z",
+      "ip": "192.168.98.232",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_99",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-09T07:35:49.852Z",
+      "ip": "192.168.99.219",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_100",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-08T06:35:49.852Z",
+      "ip": "192.168.100.51",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_101",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-08T05:35:49.852Z",
+      "ip": "192.168.101.5",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_102",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-08T04:35:49.852Z",
+      "ip": "192.168.102.47",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_103",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-08T03:35:49.852Z",
+      "ip": "192.168.103.225",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_104",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-08T02:35:49.852Z",
+      "ip": "192.168.104.250",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_105",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-08T01:35:49.852Z",
+      "ip": "192.168.105.13",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_106",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-08T00:35:49.852Z",
+      "ip": "192.168.106.233",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_107",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-07T23:35:49.852Z",
+      "ip": "192.168.107.173",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_108",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-07T22:35:49.852Z",
+      "ip": "192.168.108.223",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_109",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-07T21:35:49.852Z",
+      "ip": "192.168.109.103",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_110",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-06T20:35:49.852Z",
+      "ip": "192.168.110.70",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_111",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-06T19:35:49.852Z",
+      "ip": "192.168.111.27",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_112",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-06T18:35:49.852Z",
+      "ip": "192.168.112.156",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_113",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-06T17:35:49.852Z",
+      "ip": "192.168.113.165",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_114",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-06T16:35:49.852Z",
+      "ip": "192.168.114.152",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_115",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-06T15:35:49.852Z",
+      "ip": "192.168.115.249",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_116",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-06T14:35:49.852Z",
+      "ip": "192.168.116.96",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_117",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-06T13:35:49.852Z",
+      "ip": "192.168.117.150",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_118",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-06T12:35:49.852Z",
+      "ip": "192.168.118.57",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_119",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-06T11:35:49.852Z",
+      "ip": "192.168.119.212",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_120",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-06T10:35:49.852Z",
+      "ip": "192.168.120.131",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_121",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-06T09:35:49.852Z",
+      "ip": "192.168.121.114",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_122",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-06T08:35:49.852Z",
+      "ip": "192.168.122.163",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_123",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-06T07:35:49.852Z",
+      "ip": "192.168.123.197",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_124",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-06T06:35:49.852Z",
+      "ip": "192.168.124.195",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_125",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-06T05:35:49.852Z",
+      "ip": "192.168.125.208",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_126",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-06T04:35:49.852Z",
+      "ip": "192.168.126.164",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_127",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-06T03:35:49.852Z",
+      "ip": "192.168.127.170",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_128",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-06T02:35:49.852Z",
+      "ip": "192.168.128.88",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_129",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-06T01:35:49.852Z",
+      "ip": "192.168.129.170",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_130",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-05T00:35:49.852Z",
+      "ip": "192.168.130.127",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_131",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-04T23:35:49.852Z",
+      "ip": "192.168.131.91",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_132",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-04T22:35:49.852Z",
+      "ip": "192.168.132.4",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_133",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-04T21:35:49.852Z",
+      "ip": "192.168.133.119",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_134",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-04T20:35:49.852Z",
+      "ip": "192.168.134.164",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_135",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-04T19:35:49.852Z",
+      "ip": "192.168.135.10",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_136",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-04T18:35:49.852Z",
+      "ip": "192.168.136.93",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_137",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-04T17:35:49.852Z",
+      "ip": "192.168.137.152",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_138",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-04T16:35:49.852Z",
+      "ip": "192.168.138.38",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "desktop",
+      "browser": "Edge",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_139",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-04T15:35:49.852Z",
+      "ip": "192.168.139.3",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "mobile",
+      "browser": "Firefox",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_140",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-03T14:35:49.852Z",
+      "ip": "192.168.140.221",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "tablet",
+      "browser": "Chrome",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_141",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-03T13:35:49.852Z",
+      "ip": "192.168.141.51",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "desktop",
+      "browser": "Safari",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_142",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-03T12:35:49.852Z",
+      "ip": "192.168.142.229",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "mobile",
+      "browser": "Edge",
+      "referrer": "YouTube"
+    },
+    {
+      "id": "click_143",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-03T11:35:49.852Z",
+      "ip": "192.168.143.193",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Sindh",
+        "city": "Karachi"
+      },
+      "device": "tablet",
+      "browser": "Firefox",
+      "referrer": "Twitter"
+    },
+    {
+      "id": "click_144",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-04T10:35:49.852Z",
+      "ip": "192.168.144.217",
+      "geo": {
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "London"
+      },
+      "device": "desktop",
+      "browser": "Chrome",
+      "referrer": "Direct"
+    },
+    {
+      "id": "click_145",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-04T09:35:49.852Z",
+      "ip": "192.168.145.166",
+      "geo": {
+        "country": "Canada",
+        "region": "Ontario",
+        "city": "Toronto"
+      },
+      "device": "mobile",
+      "browser": "Safari",
+      "referrer": "WhatsApp"
+    },
+    {
+      "id": "click_146",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-04T08:35:49.852Z",
+      "ip": "192.168.146.151",
+      "geo": {
+        "country": "Germany",
+        "region": "Bavaria",
+        "city": "Munich"
+      },
+      "device": "tablet",
+      "browser": "Edge",
+      "referrer": "Facebook"
+    },
+    {
+      "id": "click_147",
+      "linkId": "link1",
+      "shortCode": "hp-laptop",
+      "timestamp": "2026-07-04T07:35:49.852Z",
+      "ip": "192.168.147.69",
+      "geo": {
+        "country": "United States",
+        "region": "California",
+        "city": "Los Angeles"
+      },
+      "device": "desktop",
+      "browser": "Firefox",
+      "referrer": "Instagram"
+    },
+    {
+      "id": "click_148",
+      "linkId": "link2",
+      "shortCode": "ipad-deal",
+      "timestamp": "2026-07-04T06:35:49.852Z",
+      "ip": "192.168.148.214",
+      "geo": {
+        "country": "United States",
+        "region": "New York",
+        "city": "New York"
+      },
+      "device": "mobile",
+      "browser": "Chrome",
+      "referrer": "TikTok"
+    },
+    {
+      "id": "click_149",
+      "linkId": "link3",
+      "shortCode": "sony-xm4",
+      "timestamp": "2026-07-04T05:35:49.852Z",
+      "ip": "192.168.149.192",
+      "geo": {
+        "country": "Pakistan",
+        "region": "Punjab",
+        "city": "Lahore"
+      },
+      "device": "tablet",
+      "browser": "Safari",
+      "referrer": "YouTube"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_0",
+      "orderId": "WM-473107",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "pending",
+      "createdAt": "2026-07-18T10:35:49.852Z",
+      "userId": "creator_demo"
+    },
+    {
+      "id": "order_1",
+      "orderId": "WM-143297",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "pending",
+      "createdAt": "2026-07-18T09:35:49.853Z",
+      "userId": "creator_demo"
+    },
+    {
+      "id": "order_2",
+      "orderId": "WM-274666",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "pending",
+      "createdAt": "2026-07-18T08:35:49.853Z",
+      "userId": "creator_demo"
+    },
+    {
+      "id": "order_3",
+      "orderId": "WM-452390",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "pending",
+      "createdAt": "2026-07-17T07:35:49.853Z",
+      "userId": "creator_demo"
+    },
+    {
+      "id": "order_4",
+      "orderId": "WM-849860",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "pending",
+      "createdAt": "2026-07-17T06:35:49.853Z",
+      "userId": "creator_demo"
+    },
+    {
+      "id": "order_5",
+      "orderId": "WM-178618",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "pending",
+      "createdAt": "2026-07-17T05:35:49.853Z",
+      "userId": "creator_demo"
+    },
+    {
+      "id": "order_6",
+      "orderId": "WM-437312",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "pending",
+      "createdAt": "2026-07-16T04:35:49.853Z",
+      "userId": "creator_demo"
+    },
+    {
+      "id": "order_7",
+      "orderId": "WM-447492",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "confirmed",
+      "createdAt": "2026-07-16T03:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-16T03:35:49.853Z"
+    },
+    {
+      "id": "order_8",
+      "orderId": "WM-919540",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "confirmed",
+      "createdAt": "2026-07-16T02:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-16T02:35:49.853Z"
+    },
+    {
+      "id": "order_9",
+      "orderId": "WM-787337",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "confirmed",
+      "createdAt": "2026-07-15T01:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-15T01:35:49.853Z"
+    },
+    {
+      "id": "order_10",
+      "orderId": "WM-701397",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "confirmed",
+      "createdAt": "2026-07-15T00:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-15T00:35:49.853Z"
+    },
+    {
+      "id": "order_11",
+      "orderId": "WM-720767",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "confirmed",
+      "createdAt": "2026-07-14T23:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-14T23:35:49.853Z"
+    },
+    {
+      "id": "order_12",
+      "orderId": "WM-104685",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "confirmed",
+      "createdAt": "2026-07-13T22:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-13T22:35:49.853Z"
+    },
+    {
+      "id": "order_13",
+      "orderId": "WM-724557",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "confirmed",
+      "createdAt": "2026-07-13T21:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-13T21:35:49.853Z"
+    },
+    {
+      "id": "order_14",
+      "orderId": "WM-662225",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "confirmed",
+      "createdAt": "2026-07-13T20:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-13T20:35:49.853Z"
+    },
+    {
+      "id": "order_15",
+      "orderId": "WM-123225",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "confirmed",
+      "createdAt": "2026-07-12T19:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-12T19:35:49.853Z"
+    },
+    {
+      "id": "order_16",
+      "orderId": "WM-156235",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "confirmed",
+      "createdAt": "2026-07-12T18:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-12T18:35:49.853Z"
+    },
+    {
+      "id": "order_17",
+      "orderId": "WM-786864",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "confirmed",
+      "createdAt": "2026-07-12T17:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-12T17:35:49.853Z"
+    },
+    {
+      "id": "order_18",
+      "orderId": "WM-640033",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "confirmed",
+      "createdAt": "2026-07-11T16:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-11T16:35:49.853Z"
+    },
+    {
+      "id": "order_19",
+      "orderId": "WM-468326",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "confirmed",
+      "createdAt": "2026-07-11T15:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-11T15:35:49.853Z"
+    },
+    {
+      "id": "order_20",
+      "orderId": "WM-998075",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "confirmed",
+      "createdAt": "2026-07-11T14:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-11T14:35:49.853Z"
+    },
+    {
+      "id": "order_21",
+      "orderId": "WM-328950",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T13:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-10T13:35:49.853Z"
+    },
+    {
+      "id": "order_22",
+      "orderId": "WM-940589",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T12:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-10T12:35:49.853Z"
+    },
+    {
+      "id": "order_23",
+      "orderId": "WM-168779",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T11:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-10T11:35:49.853Z"
+    },
+    {
+      "id": "order_24",
+      "orderId": "WM-335816",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T10:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-10T10:35:49.853Z"
+    },
+    {
+      "id": "order_25",
+      "orderId": "WM-430675",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T09:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-10T09:35:49.853Z"
+    },
+    {
+      "id": "order_26",
+      "orderId": "WM-915948",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T08:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-10T08:35:49.853Z"
+    },
+    {
+      "id": "order_27",
+      "orderId": "WM-583023",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "confirmed",
+      "createdAt": "2026-07-09T07:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-09T07:35:49.853Z"
+    },
+    {
+      "id": "order_28",
+      "orderId": "WM-383379",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "confirmed",
+      "createdAt": "2026-07-09T06:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-09T06:35:49.853Z"
+    },
+    {
+      "id": "order_29",
+      "orderId": "WM-606301",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "confirmed",
+      "createdAt": "2026-07-09T05:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-09T05:35:49.853Z"
+    },
+    {
+      "id": "order_30",
+      "orderId": "WM-693587",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "confirmed",
+      "createdAt": "2026-07-08T04:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-08T04:35:49.853Z"
+    },
+    {
+      "id": "order_31",
+      "orderId": "WM-806845",
+      "originalUrl": "TCL Smart TV",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 299,
+      "commissionAmount": 44.85,
+      "status": "paid",
+      "createdAt": "2026-07-08T03:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-08T03:35:49.853Z",
+      "paidAt": "2026-07-08T03:35:49.853Z"
+    },
+    {
+      "id": "order_32",
+      "orderId": "WM-234850",
+      "originalUrl": "HP Laptop",
+      "shortCode": "hp-laptop",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 450,
+      "commissionAmount": 67.5,
+      "status": "paid",
+      "createdAt": "2026-07-08T02:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-08T02:35:49.853Z",
+      "paidAt": "2026-07-08T02:35:49.853Z"
+    },
+    {
+      "id": "order_33",
+      "orderId": "WM-171171",
+      "originalUrl": "Apple iPad",
+      "shortCode": "ipad-deal",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 320,
+      "commissionAmount": 48,
+      "status": "paid",
+      "createdAt": "2026-07-07T01:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-07T01:35:49.853Z",
+      "paidAt": "2026-07-07T01:35:49.853Z"
+    },
+    {
+      "id": "order_34",
+      "orderId": "WM-146120",
+      "originalUrl": "Sony Headphones",
+      "shortCode": "sony-xm4",
+      "affiliateTrackingId": "IPFLACK_TRACKING_ID",
+      "subtotal": 280,
+      "commissionAmount": 42,
+      "status": "paid",
+      "createdAt": "2026-07-07T00:35:49.853Z",
+      "userId": "creator_demo",
+      "confirmedAt": "2026-07-07T00:35:49.853Z",
+      "paidAt": "2026-07-07T00:35:49.853Z"
+    }
+  ],
+  "payouts": [
+    {
+      "id": "payout1",
+      "userId": "creator_demo",
+      "method": "easypaisa",
+      "details": {
+        "accountName": "Sarah Jenkins",
+        "accountNumber": "03001234567"
+      },
+      "amount": 450,
+      "status": "approved",
+      "createdAt": "2026-07-06T10:35:49.853Z",
+      "processedAt": "2026-07-07T10:35:49.853Z",
+      "notes": "Payout completed successfully via Easypaisa."
+    },
+    {
+      "id": "payout2",
+      "userId": "creator_demo",
+      "method": "jazzcash",
+      "details": {
+        "accountName": "Sarah Jenkins",
+        "accountNumber": "03117654321"
+      },
+      "amount": 250,
+      "status": "pending",
+      "createdAt": "2026-07-17T10:35:49.853Z"
+    }
+  ],
+  "wallets": [
+    {
+      "userId": "creator_demo",
+      "availableBalance": 1342.5,
+      "pendingBalance": 525,
+      "withdrawableBalance": 1342.5,
+      "lifetimeEarnings": 3210
+    },
+    {
+      "userId": "user_1784374162884",
+      "availableBalance": 0,
+      "pendingBalance": 0,
+      "withdrawableBalance": 0,
+      "lifetimeEarnings": 0
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif1",
+      "userId": "creator_demo",
+      "title": "Withdrawal Approved",
+      "message": "Your withdrawal of $450.00 via Easypaisa has been processed.",
+      "type": "payout_approved",
+      "isRead": true,
+      "createdAt": "2026-07-07T10:35:49.853Z"
+    },
+    {
+      "id": "notif2",
+      "userId": "creator_demo",
+      "title": "New Order Confirmed",
+      "message": "Order WM-541239 tracked! You earned $67.50 commission (15%).",
+      "type": "commission_confirmed",
+      "isRead": false,
+      "createdAt": "2026-07-16T10:35:49.853Z"
+    },
+    {
+      "id": "notif3",
+      "userId": "creator_demo",
+      "title": "Affiliate Link Clicked",
+      "message": "Your short link 'ipad-deal' received 50 new clicks today.",
+      "type": "click",
+      "isRead": true,
+      "createdAt": "2026-07-17T22:35:49.853Z"
+    }
+  ],
+  "settings": {
+    "trackingId": "IPFLACK_TRACKING_ID",
+    "defaultCommissionRate": 0.1,
+    "confirmedCommissionRate": 0.15,
+    "walmartTrackingId": "IPFLACK_TRACKING_ID",
+    "autoTrackingEnabled": true,
+    "autoShortenEnabled": true,
+    "shortLinkBehavior": "immediate",
+    "manageExpiration": false,
+    "qrCodeGeneration": true,
+    "amazonAssociateId": "muhammadis0ff-20",
+    "amazonEnabled": true,
+    "walmartEnabled": false,
+    "ebayEnabled": false,
+    "targetEnabled": false,
+    "bestbuyEnabled": false,
+    "aliexpressEnabled": false,
+    "defaultAffiliateNetwork": "amazon",
+    "impactSettings": {
+      "publisherAccount": "IMPACT_PUBLISHER_ACCOUNT_PLACEHOLDER",
+      "mediaProperty": "IMPACT_MEDIA_PROPERTY_PLACEHOLDER",
+      "trackingDomain": "IMPACT_TRACKING_DOMAIN_PLACEHOLDER",
+      "apiCredentials": "IMPACT_API_CREDENTIALS_PLACEHOLDER",
+      "subIdFormat": "IMPACT_SUBID_FORMAT_PLACEHOLDER",
+      "webhookProcessingEnabled": false
+    },
+    "revenueShare": {
+      "adminPct": 60,
+      "creatorPct": 40,
+      "autoPayoutApproval": false,
+      "impactCredentials": {
+        "accountSid": "ACCOUNT_SID_IPFLACK",
+        "authToken": "AUTH_TOKEN_IPFLACK",
+        "enabled": true
+      },
+      "merchantRules": {
+        "0": {
+          "id": "1",
+          "merchant": "walmart.com",
+          "rate": 5,
+          "policy": "confirmed after 30 days"
+        },
+        "1": {
+          "id": "2",
+          "merchant": "amazon.com",
+          "rate": 4,
+          "policy": "confirmed after 60 days"
+        },
+        "2": {
+          "id": "3",
+          "merchant": "ebay.com",
+          "rate": 6,
+          "policy": "confirmed after 45 days"
+        },
+        "3": {
+          "id": "4",
+          "merchant": "target.com",
+          "rate": 5,
+          "policy": "confirmed after 30 days"
+        },
+        "4": {
+          "id": "5",
+          "merchant": "aliexpress.com",
+          "rate": 8,
+          "policy": "confirmed after 60 days"
+        },
+        "5": {
+          "id": "6",
+          "merchant": "bestbuy.com",
+          "rate": 3,
+          "policy": "confirmed after 14 days"
+        },
+        "6": {
+          "id": "7",
+          "merchant": "etsy.com",
+          "rate": 7,
+          "policy": "confirmed after 45 days"
+        }
+      }
+    },
+    "branding": {
+      "websiteName": "IPFLACK",
+      "logo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "favicon": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      "primaryColor": "#3b82f6",
+      "secondaryColor": "#10b981",
+      "font": "Inter",
+      "theme": "dark",
+      "contactEmail": "support@ipflack.online",
+      "contactPhone": "+92 300 1234567",
+      "seoTitle": "IPFLACK - Best Creator Link-Shortening & Affiliate Tracking Platform",
+      "seoDescription": "IPFLACK empowers creators to monetize supported merchant products through smart link shortening, tracking automation, and fast withdrawals."
+    },
+    "cms": {
+      "homepageTitle": "Supercharge Your Creator Earnings with IPFLACK",
+      "homepageHeroSubtitle": "Monetize your audience with built-in affiliate link shortening for supported merchants, lightning-fast short-links, and high commission rates.",
+      "feature1Title": "Automated Tracking",
+      "feature1Desc": "Never miss a referral. We auto-append your Affiliate Tracking ID to every shortened product or merchant link.",
+      "feature2Title": "Fast Cashouts",
+      "feature2Desc": "Withdraw your earnings straight to Easypaisa, JazzCash, or bank transfer with minimal wait times.",
+      "feature3Title": "Real-time Analytics",
+      "feature3Desc": "Track clicks, orders, device breakdown, and geo-distribution from an intuitive live dashboard.",
+      "aboutPageContent": "IPFLACK is a dedicated, secure platform designed for modern social media creators to easily direct and monetize their traffic.",
+      "contactPageContent": "Have questions or need assistance? Reach out to our dedicated support team 24/7.",
+      "faq": "Q: How do I get paid?\nA: You can withdraw earnings directly into Easypaisa, JazzCash, or bank accounts.\n\nQ: How does affiliate tracking work?\nA: All supported product and merchant links are auto-appended with your affiliate tracking details.",
+      "privacyPolicy": "We protect your data and never sell it to third parties. Our tracking keeps you secure.",
+      "termsConditions": "By using IPFLACK, you agree to comply with merchant affiliate terms and our community rules.",
+      "footerText": "© 2026 IPFLACK Platform. All rights reserved.",
+      "announcementBar": "🚀 Welcome to the new IPFLACK 2.0 platform! High commission rates are live."
+    },
+    "commission": {
+      "defaultCommissionRate": 10,
+      "confirmedCommissionRate": 15,
+      "referralRate": 2.5,
+      "minimumWithdrawalAmount": 50,
+      "activeBonusCampaign": true,
+      "bonusCampaignRate": 5
+    },
+    "payments": {
+      "easypaisa": {
+        "accountTitle": "IPFLACK Operations",
+        "accountNumber": "03001234567",
+        "qrCode": "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=400&auto=format&fit=crop&q=60",
+        "enabled": true
+      },
+      "jazzcash": {
+        "accountTitle": "IPFLACK Logistics",
+        "accountNumber": "03117654321",
+        "qrCode": "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=400&auto=format&fit=crop&q=60",
+        "enabled": true
+      },
+      "bank": {
+        "bankName": "Habib Bank Limited (HBL)",
+        "accountTitle": "IPFLACK Pvt Ltd",
+        "accountNumber": "12345678901234",
+        "iban": "PK73HABB00123456789012",
+        "enabled": true
+      }
+    },
+    "emailTemplates": {
+      "registrationVerification": "Hello {{name}},\n\nWelcome to IPFLACK! Your verification code is: {{code}}.\n\nBest regards,\nIPFLACK Admin Team",
+      "phoneOtp": "IPFLACK: Your OTP code is {{code}}. Do not share this code.",
+      "passwordReset": "Hello {{name}},\n\nYou requested a password reset. Use verification code {{code}} to set a new password.",
+      "commissionEarned": "Congratulations! You earned a commission of {{amount}} from order {{orderId}}.",
+      "withdrawalApproved": "Awesome news! Your withdrawal of {{amount}} via {{method}} has been approved. Trans Ref: {{ref}}.",
+      "withdrawalRejected": "Your withdrawal request of {{amount}} has been declined. Reason: {{reason}}."
+    },
+    "featureFlags": {
+      "referrals": true,
+      "qrCodes": true,
+      "publicProfiles": true,
+      "notifications": true,
+      "blog": true,
+      "couponSystem": false,
+      "leaderboards": true,
+      "maintenanceMode": false
+    },
+    "systemSettings": {
+      "websiteName": "IPFLACK",
+      "domainSettings": "ipflack.online",
+      "timeZone": "Asia/Karachi",
+      "currency": "PKR",
+      "defaultLanguage": "English",
+      "registrationOn": true,
+      "emailVerificationRequired": true,
+      "phoneVerificationRequired": true
+    },
+    "authCredentials": {
+      "smtpHost": "",
+      "smtpPort": "587",
+      "smtpUser": "",
+      "smtpPass": "",
+      "smtpFrom": "",
+      "twilioSid": "",
+      "twilioToken": "",
+      "twilioPhone": ""
+    }
+  },
+  "earningsLedger": [
+    {
+      "id": "led_order_0",
+      "orderId": "WM-473107",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "pending_logged",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "pending",
+      "createdAt": "2026-07-18T10:35:49.852Z",
+      "notes": "Pending affiliate commission of $168.75 reported by network (e.g. Impact). Splitting 40% to Creator."
+    },
+    {
+      "id": "led_order_1",
+      "orderId": "WM-143297",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "pending_logged",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "pending",
+      "createdAt": "2026-07-18T09:35:49.853Z",
+      "notes": "Pending affiliate commission of $120.00 reported by network (e.g. Impact). Splitting 40% to Creator."
+    },
+    {
+      "id": "led_order_2",
+      "orderId": "WM-274666",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "pending_logged",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "pending",
+      "createdAt": "2026-07-18T08:35:49.853Z",
+      "notes": "Pending affiliate commission of $105.00 reported by network (e.g. Impact). Splitting 40% to Creator."
+    },
+    {
+      "id": "led_order_3",
+      "orderId": "WM-452390",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "pending_logged",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "pending",
+      "createdAt": "2026-07-17T07:35:49.853Z",
+      "notes": "Pending affiliate commission of $112.13 reported by network (e.g. Impact). Splitting 40% to Creator."
+    },
+    {
+      "id": "led_order_4",
+      "orderId": "WM-849860",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "pending_logged",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "pending",
+      "createdAt": "2026-07-17T06:35:49.853Z",
+      "notes": "Pending affiliate commission of $168.75 reported by network (e.g. Impact). Splitting 40% to Creator."
+    },
+    {
+      "id": "led_order_5",
+      "orderId": "WM-178618",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "pending_logged",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "pending",
+      "createdAt": "2026-07-17T05:35:49.853Z",
+      "notes": "Pending affiliate commission of $120.00 reported by network (e.g. Impact). Splitting 40% to Creator."
+    },
+    {
+      "id": "led_order_6",
+      "orderId": "WM-437312",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "pending_logged",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "pending",
+      "createdAt": "2026-07-16T04:35:49.853Z",
+      "notes": "Pending affiliate commission of $105.00 reported by network (e.g. Impact). Splitting 40% to Creator."
+    },
+    {
+      "id": "led_order_7",
+      "orderId": "WM-447492",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "commission_confirmed",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "confirmed",
+      "createdAt": "2026-07-16T03:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $112.13. Crediting $44.85 to creator's available balance."
+    },
+    {
+      "id": "led_order_8",
+      "orderId": "WM-919540",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "commission_confirmed",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "confirmed",
+      "createdAt": "2026-07-16T02:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $168.75. Crediting $67.50 to creator's available balance."
+    },
+    {
+      "id": "led_order_9",
+      "orderId": "WM-787337",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "commission_confirmed",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "confirmed",
+      "createdAt": "2026-07-15T01:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $120.00. Crediting $48.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_10",
+      "orderId": "WM-701397",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "commission_confirmed",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "confirmed",
+      "createdAt": "2026-07-15T00:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $105.00. Crediting $42.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_11",
+      "orderId": "WM-720767",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "commission_confirmed",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "confirmed",
+      "createdAt": "2026-07-14T23:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $112.13. Crediting $44.85 to creator's available balance."
+    },
+    {
+      "id": "led_order_12",
+      "orderId": "WM-104685",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "commission_confirmed",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "confirmed",
+      "createdAt": "2026-07-13T22:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $168.75. Crediting $67.50 to creator's available balance."
+    },
+    {
+      "id": "led_order_13",
+      "orderId": "WM-724557",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "commission_confirmed",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "confirmed",
+      "createdAt": "2026-07-13T21:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $120.00. Crediting $48.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_14",
+      "orderId": "WM-662225",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "commission_confirmed",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "confirmed",
+      "createdAt": "2026-07-13T20:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $105.00. Crediting $42.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_15",
+      "orderId": "WM-123225",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "commission_confirmed",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "confirmed",
+      "createdAt": "2026-07-12T19:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $112.13. Crediting $44.85 to creator's available balance."
+    },
+    {
+      "id": "led_order_16",
+      "orderId": "WM-156235",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "commission_confirmed",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "confirmed",
+      "createdAt": "2026-07-12T18:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $168.75. Crediting $67.50 to creator's available balance."
+    },
+    {
+      "id": "led_order_17",
+      "orderId": "WM-786864",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "commission_confirmed",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "confirmed",
+      "createdAt": "2026-07-12T17:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $120.00. Crediting $48.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_18",
+      "orderId": "WM-640033",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "commission_confirmed",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "confirmed",
+      "createdAt": "2026-07-11T16:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $105.00. Crediting $42.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_19",
+      "orderId": "WM-468326",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "commission_confirmed",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "confirmed",
+      "createdAt": "2026-07-11T15:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $112.13. Crediting $44.85 to creator's available balance."
+    },
+    {
+      "id": "led_order_20",
+      "orderId": "WM-998075",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "commission_confirmed",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "confirmed",
+      "createdAt": "2026-07-11T14:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $168.75. Crediting $67.50 to creator's available balance."
+    },
+    {
+      "id": "led_order_21",
+      "orderId": "WM-328950",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "commission_confirmed",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T13:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $120.00. Crediting $48.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_22",
+      "orderId": "WM-940589",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "commission_confirmed",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T12:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $105.00. Crediting $42.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_23",
+      "orderId": "WM-168779",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "commission_confirmed",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T11:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $112.13. Crediting $44.85 to creator's available balance."
+    },
+    {
+      "id": "led_order_24",
+      "orderId": "WM-335816",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "commission_confirmed",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T10:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $168.75. Crediting $67.50 to creator's available balance."
+    },
+    {
+      "id": "led_order_25",
+      "orderId": "WM-430675",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "commission_confirmed",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T09:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $120.00. Crediting $48.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_26",
+      "orderId": "WM-915948",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "commission_confirmed",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "confirmed",
+      "createdAt": "2026-07-10T08:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $105.00. Crediting $42.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_27",
+      "orderId": "WM-583023",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "commission_confirmed",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "confirmed",
+      "createdAt": "2026-07-09T07:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $112.13. Crediting $44.85 to creator's available balance."
+    },
+    {
+      "id": "led_order_28",
+      "orderId": "WM-383379",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "commission_confirmed",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "confirmed",
+      "createdAt": "2026-07-09T06:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $168.75. Crediting $67.50 to creator's available balance."
+    },
+    {
+      "id": "led_order_29",
+      "orderId": "WM-606301",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "commission_confirmed",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "confirmed",
+      "createdAt": "2026-07-09T05:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $120.00. Crediting $48.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_30",
+      "orderId": "WM-693587",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "commission_confirmed",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "confirmed",
+      "createdAt": "2026-07-08T04:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $105.00. Crediting $42.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_31",
+      "orderId": "WM-806845",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "TCL Smart TV",
+      "action": "payout_paid",
+      "subtotal": 299,
+      "totalAffiliateCommission": 112.13,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 44.85,
+      "adminEarnings": 67.28,
+      "status": "paid",
+      "createdAt": "2026-07-08T03:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $112.13. Crediting $44.85 to creator's available balance."
+    },
+    {
+      "id": "led_order_32",
+      "orderId": "WM-234850",
+      "userId": "creator_demo",
+      "shortCode": "hp-laptop",
+      "originalUrl": "HP Laptop",
+      "action": "payout_paid",
+      "subtotal": 450,
+      "totalAffiliateCommission": 168.75,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 67.5,
+      "adminEarnings": 101.25,
+      "status": "paid",
+      "createdAt": "2026-07-08T02:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $168.75. Crediting $67.50 to creator's available balance."
+    },
+    {
+      "id": "led_order_33",
+      "orderId": "WM-171171",
+      "userId": "creator_demo",
+      "shortCode": "ipad-deal",
+      "originalUrl": "Apple iPad",
+      "action": "payout_paid",
+      "subtotal": 320,
+      "totalAffiliateCommission": 120,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 48,
+      "adminEarnings": 72,
+      "status": "paid",
+      "createdAt": "2026-07-07T01:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $120.00. Crediting $48.00 to creator's available balance."
+    },
+    {
+      "id": "led_order_34",
+      "orderId": "WM-146120",
+      "userId": "creator_demo",
+      "shortCode": "sony-xm4",
+      "originalUrl": "Sony Headphones",
+      "action": "payout_paid",
+      "subtotal": 280,
+      "totalAffiliateCommission": 105,
+      "revenueSplitPercent": 40,
+      "creatorEarnings": 42,
+      "adminEarnings": 63,
+      "status": "paid",
+      "createdAt": "2026-07-07T00:35:49.853Z",
+      "notes": "Affiliate network confirmed payment of $105.00. Crediting $42.00 to creator's available balance."
+    }
+  ],
+  "affiliatePrograms": [
+    {
+      "programId": "walmart",
+      "programName": "Walmart",
+      "marketplace": "walmart.com",
+      "affiliateNetwork": "Impact / Walmart Affiliate",
+      "logo": "https://images.unsplash.com/photo-1571867424488-4565932edb41?w=200&auto=format&fit=crop&q=60",
+      "status": "active",
+      "platformSharePercentage": 60,
+      "creatorSharePercentage": 40,
+      "commissionType": "dynamic",
+      "createdAt": "2026-07-18T10:35:49.853Z",
+      "updatedAt": "2026-07-18T10:35:49.853Z"
+    },
+    {
+      "programId": "amazon",
+      "programName": "Amazon",
+      "marketplace": "amazon.com",
+      "affiliateNetwork": "Amazon Associates",
+      "logo": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=200&auto=format&fit=crop&q=60",
+      "status": "active",
+      "platformSharePercentage": 60,
+      "creatorSharePercentage": 40,
+      "commissionType": "category based",
+      "createdAt": "2026-07-18T10:35:49.853Z",
+      "updatedAt": "2026-07-18T10:35:49.853Z"
+    }
+  ],
+  "commissionRules": [
+    {
+      "id": "rule_amz_1",
+      "programId": "amazon",
+      "categoryName": "Amazon Games",
+      "commissionRate": 20,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_2",
+      "programId": "amazon",
+      "categoryName": "Luxury Beauty / Luxury Stores Beauty / Handmade",
+      "commissionRate": 10,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_3",
+      "programId": "amazon",
+      "categoryName": "Digital and Physical Music",
+      "commissionRate": 5,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_4",
+      "programId": "amazon",
+      "categoryName": "Physical Books / Kitchen / Automotive",
+      "commissionRate": 4.5,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_5",
+      "programId": "amazon",
+      "categoryName": "Apparel / Shoes / Jewelry / Luggage / Watches / Amazon Devices",
+      "commissionRate": 4,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_6",
+      "programId": "amazon",
+      "categoryName": "Furniture / Toys / Home Improvement / Pet Products / Baby Products",
+      "commissionRate": 3,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_7",
+      "programId": "amazon",
+      "categoryName": "PC and PC Components",
+      "commissionRate": 2.5,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_8",
+      "programId": "amazon",
+      "categoryName": "Grocery / Health & Personal Care / Physical Video Games",
+      "commissionRate": 1,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    },
+    {
+      "id": "rule_amz_9",
+      "programId": "amazon",
+      "categoryName": "Gift Cards / Alcohol / Wireless Service Plans / Pet Prescriptions",
+      "commissionRate": 0,
+      "platformShare": 60,
+      "creatorShare": 40,
+      "status": "active"
+    }
+  ]
+}

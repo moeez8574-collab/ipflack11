@@ -1,0 +1,6 @@
+{
+  "name": "IPFLACK",
+  "description": "IPFLACK is a high-trust creator affiliate marketplace on ipflack.online featuring built-in tracked link shortening, live analytics distribution, automated 15% merchant commission routing, and withdraw settlements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
