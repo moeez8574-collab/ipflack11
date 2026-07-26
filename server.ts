@@ -3,8 +3,10 @@ import path from "path";
 import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import "dotenv/config";
-import * as admin from "firebase-admin";
+
+import { initializeApp, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
+
 import nodemailer from "nodemailer";
 import twilio from "twilio";
 
@@ -21,41 +23,10 @@ try {
 
 let firestoreDb: any = null;
 
-if (firebaseConfig) {
-  try {
-    const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT;
-
-    if (!serviceAccount) {
-      throw new Error("FIREBASE_SERVICE_ACCOUNT environment variable missing");
-    }
-
-    admin.initializeApp({
-      credential: admin.credential.cert(JSON.parse(serviceAccount)),
-      projectId: firebaseConfig.projectId
-    });
-
-    console.log(
-      "Firebase Admin initialized with project ID:",
-      firebaseConfig.projectId
-    );
-
-    if (firebaseConfig.firestoreDatabaseId) {
-      firestoreDb = getFirestore(firebaseConfig.firestoreDatabaseId);
-      console.log(
-        "Firestore initialized with database ID:",
-        firebaseConfig.firestoreDatabaseId
-      );
-    } else {
-      firestoreDb = getFirestore();
-      console.log("Firestore initialized with default database");
-    }
-
-  } catch (err) {
-    console.error("Failed to initialize Firebase / Firestore:", err);
-  }
-}
-
-
+initializeApp({
+  credential: cert(JSON.parse(serviceAccount)),
+  projectId: firebaseConfig.projectId
+});
 declare global {
   namespace Express {
     interface Request {
