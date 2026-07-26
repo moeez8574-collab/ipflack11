@@ -23,10 +23,39 @@ try {
 
 let firestoreDb: any = null;
 
-initializeApp({
-  credential: cert(JSON.parse(serviceAccount)),
-  projectId: firebaseConfig.projectId
-});
+if (firebaseConfig) {
+  try {
+    const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT;
+
+    if (!serviceAccount) {
+      throw new Error("FIREBASE_SERVICE_ACCOUNT environment variable missing");
+    }
+
+    initializeApp({
+      credential: cert(JSON.parse(serviceAccount)),
+      projectId: firebaseConfig.projectId
+    });
+
+    console.log(
+      "Firebase Admin initialized with project ID:",
+      firebaseConfig.projectId
+    );
+
+    if (firebaseConfig.firestoreDatabaseId) {
+      firestoreDb = getFirestore(firebaseConfig.firestoreDatabaseId);
+      console.log(
+        "Firestore initialized with database ID:",
+        firebaseConfig.firestoreDatabaseId
+      );
+    } else {
+      firestoreDb = getFirestore();
+      console.log("Firestore initialized with default database");
+    }
+
+  } catch (err) {
+    console.error("Failed to initialize Firebase / Firestore:", err);
+  }
+}
 declare global {
   namespace Express {
     interface Request {
