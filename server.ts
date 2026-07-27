@@ -1278,9 +1278,9 @@ app.post("/api/auth/otp/verify", async (req, res) => {
   if (!user) return res.status(404).json({ error: "User not found" });
 
   const isVerifiedInFirestore = await verifyOtpFromFirestore(phone, code.toString(), "phone");
-  const expectedCode = user.phoneOtpCode || "123456";
+  const expectedCode = user.phoneOtpCode;
 
-  if (isVerifiedInFirestore || code === expectedCode || code.toString() === expectedCode.toString() || code === "123456" || code === 123456) {
+if (isVerifiedInFirestore || (expectedCode && code.toString() === expectedCode.toString())) {
     user.isPhoneVerified = true;
     saveDb();
     return res.json({ success: true, message: "Phone verified successfully!" });
@@ -1296,9 +1296,9 @@ app.post("/api/auth/email/verify-code", async (req, res) => {
   if (!user) return res.status(404).json({ error: "User not found" });
 
   const isVerifiedInFirestore = await verifyOtpFromFirestore(email, code.toString(), "verification");
-  const expectedCode = user.emailVerificationCode || "123456";
+  const expectedCode = user.emailVerificationCode;
 
-  if (isVerifiedInFirestore || code === expectedCode || code.toString() === expectedCode.toString() || code === "123456" || code === 123456) {
+if (isVerifiedInFirestore || (expectedCode && code.toString() === expectedCode.toString())) {
     user.isEmailVerified = true;
     saveDb();
     return res.json({ success: true, message: "Email verified successfully!" });
@@ -1335,9 +1335,9 @@ app.post("/api/auth/reset-password/confirm", async (req, res) => {
   if (!user) return res.status(404).json({ error: "User not found" });
 
   const isVerifiedInFirestore = await verifyOtpFromFirestore(email, code.toString(), "reset");
-  const expectedCode = user.resetPasswordCode || "123456";
+  const expectedCode = user.resetPasswordCode;
 
-  if (isVerifiedInFirestore || code === expectedCode || code.toString() === expectedCode.toString() || code === "123456" || code === 123456) {
+if (isVerifiedInFirestore || (expectedCode && code.toString() === expectedCode.toString())) {
     user.password = newPassword;
     user.resetPasswordCode = null;
     saveDb();
