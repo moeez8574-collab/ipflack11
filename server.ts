@@ -4,11 +4,16 @@ import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import "dotenv/config";
 
+import dns from "dns";
+
+dns.setDefaultResultOrder("ipv4first");
+
 import { initializeApp, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
 import nodemailer from "nodemailer";
 import twilio from "twilio";
+
 
 // Read Firebase applet configuration
 let firebaseConfig: any = null;
