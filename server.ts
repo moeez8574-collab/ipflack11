@@ -1204,8 +1204,8 @@ app.post("/api/auth/register", (req, res) => {
   saveDb();
 
   // Send real email and SMS OTPs in the background
-  sendEmailOtp(email, name, emailCode, "verification");
-  sendPhoneOtp(phone, phoneCode);
+ await sendEmailOtp(email, name, emailCode, "verification");
+ await sendPhoneOtp(phone, phoneCode);
 
   const token = generateToken(newUser);
   res.status(201).json({
@@ -1223,7 +1223,7 @@ app.post("/api/auth/register", (req, res) => {
   });
 });
 
-app.post("/api/auth/login", (req, res) => {
+app.post("/api/auth/signup", async (req, res) => {
   const { identifier, password } = req.body; // email or phone
   if (!identifier || !password) {
     return res.status(400).json({ error: "Email/Phone and password are required" });
@@ -1266,7 +1266,7 @@ app.post("/api/auth/otp/send", (req, res) => {
   user.phoneOtpCode = code;
   saveDb();
 
-  sendPhoneOtp(phone, code);
+  await sendPhoneOtp(phone, phoneCode);
 
   const twilioConfigured = !!(process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN && process.env.TWILIO_PHONE_NUMBER);
   if (!twilioConfigured) {
