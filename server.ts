@@ -1259,6 +1259,41 @@ app.post("/api/auth/signup", async (req, res) => {
     token
   });
 });
+app.post("/api/auth/login", (req, res) => {
+  const { identifier, password } = req.body;
+
+  if (!identifier || !password) {
+    return res.status(400).json({
+      error: "Email/Phone and password are required"
+    });
+  }
+
+  const user = db.users.find(
+    u => (u.email === identifier || u.phone === identifier) &&
+         u.password === password
+  );
+
+  if (!user) {
+    return res.status(401).json({
+      error: "Invalid credentials"
+    });
+  }
+
+  const token = generateToken(user);
+
+  res.json({
+    user: {
+      id: user.id,
+      email: user.email,
+      phone: user.phone,
+      name: user.name,
+      role: user.role,
+      isEmailVerified: user.isEmailVerified,
+      isPhoneVerified: user.isPhoneVerified
+    },
+    token
+  });
+});
 
 // OTP and verification
 app.post("/api/auth/otp/send", async (req, res) => {
