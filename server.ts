@@ -1255,7 +1255,7 @@ app.post("/api/auth/signup", async (req, res) => {
 });
 
 // OTP and verification
-app.post("/api/auth/otp/send", (req, res) => {
+app.post("/api/auth/otp/send", async (req, res) => {
   const { phone } = req.body;
   if (!phone) return res.status(400).json({ error: "Phone number required" });
   
