@@ -830,14 +830,14 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
 
   if (host && user && pass) {
     try {
-      const transporter = nodemailer.createTransport({
+     const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   secure: false,
   family: 4,
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS
+    user,
+    pass
   },
   tls: {
     rejectUnauthorized: false
