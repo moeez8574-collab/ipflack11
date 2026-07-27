@@ -1151,7 +1151,7 @@ function getAggregatedStats(userId: string) {
 // --- API ENDPOINTS ---
 
 // Auth endpoints
-app.post("/api/auth/register", (req, res) => {
+app.post("/api/auth/register", async (req, res) => {
   const { email, phone, name, password, role, socials } = req.body;
   if (!email || !phone || !name || !password) {
     return res.status(400).json({ error: "All fields are required" });
