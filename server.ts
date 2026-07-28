@@ -1179,7 +1179,7 @@ app.post("/api/auth/register", async (req, res) => {
   }
 
   const emailCode = Math.floor(100000 + Math.random() * 900000).toString();
-  const phoneCode = Math.floor(100000 + Math.random() * 900000).toString();
+  
 
   const newUser: any = {
     id: `user_${Date.now()}`,
@@ -1189,9 +1189,9 @@ app.post("/api/auth/register", async (req, res) => {
     role: userRole,
     password,
     isEmailVerified: false,
-    isPhoneVerified: false,
+    isPhoneVerified: true,
     emailVerificationCode: emailCode,
-    phoneOtpCode: phoneCode,
+    
     createdAt: new Date().toISOString()
   };
 
@@ -1214,7 +1214,8 @@ app.post("/api/auth/register", async (req, res) => {
   saveDb();
 
   // Send real email and SMS OTPs in the background
- await sendEmailOtp(email, name, emailCode, "verification");
+sendEmailOtp(email, name, emailCode, "verification")
+  .catch(err => console.log("Email OTP Error:", err));
  
 
   const token = generateToken(newUser);
