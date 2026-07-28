@@ -1181,19 +1181,18 @@ app.post("/api/auth/register", async (req, res) => {
   const emailCode = Math.floor(100000 + Math.random() * 900000).toString();
   const phoneCode = Math.floor(100000 + Math.random() * 900000).toString();
 
-  const newUser: any = {
-    id: `user_${Date.now()}`,
-    email,
-    phone,
-    name,
-    role: userRole,
-    password,
-    isEmailVerified: false,
-    isPhoneVerified: false,
-    emailVerificationCode: emailCode,
-    phoneOtpCode: phoneCode,
-    createdAt: new Date().toISOString()
-  };
+ const newUser: any = {
+  id: `user_${Date.now()}`,
+  email,
+  phone,
+  name,
+  role: userRole,
+  password,
+  isEmailVerified: false,
+  isPhoneVerified: true,
+  emailVerificationCode: emailCode,
+  createdAt: new Date().toISOString()
+};
 
   if (userRole === "creator") {
     newUser.socials = socials;
@@ -1215,7 +1214,7 @@ app.post("/api/auth/register", async (req, res) => {
 
   // Send real email and SMS OTPs in the background
  await sendEmailOtp(email, name, emailCode, "verification");
- await sendPhoneOtp(phone, phoneCode);
+ 
 
   const token = generateToken(newUser);
   res.status(201).json({
@@ -1313,7 +1312,7 @@ saveDb();
 
 await sendPhoneOtp(phone, code);
 
-  await sendPhoneOtp(phone, phoneCode);
+ // await sendPhoneOtp(phone, phoneCode);
 
   const twilioConfigured = !!(process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN && process.env.TWILIO_PHONE_NUMBER);
   if (!twilioConfigured) {
