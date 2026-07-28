@@ -815,8 +815,8 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
   const creds = db?.settings?.authCredentials;
   const host = creds?.smtpHost || process.env.SMTP_HOST;
   const port = parseInt(creds?.smtpPort || process.env.SMTP_PORT || "587");
-  const user = creds?.smtpUser || process.env.SMTP_USER;
-  const pass = creds?.smtpPass || process.env.SMTP_PASS;
+const user = process.env.BREVO_USER;
+const pass = process.env.BREVO_PASS;
   const from = creds?.smtpFrom || process.env.SMTP_FROM || `"IPFLACK Admin" <support@ipflack.online>`;
 
   const subject = type === "verification" 
@@ -833,28 +833,30 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
 
   console.log(`[Email OTP] Sending code to: ${toEmail}. Code: ${code}`);
 
-  if (host && user && pass) {
-    try {
-const transporter = nodemailer.createTransport({
-  host: "smtp-relay.brevo.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.BREVO_USER,
-    pass: process.env.BREVO_PASS
-  }
-});
+ if (user && pass) {
+  try {
+    const transporter = nodemailer.createTransport({
+      host: "smtp-relay.brevo.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user,
+        pass
+      },
+      logger: true,
+      debug: true
+    });
 console.log("SMTP DEBUG", {
   user,
   pass: pass ? "FOUND" : "MISSING"
 });
 
-      await transporter.sendMail({
-        from,
-        to: toEmail,
-        subject,
-        text
-      });
+    await transporter.sendMail({
+  from,
+  to: toEmail,
+  subject,
+  text
+});
       console.log(`[Email OTP] Real email sent successfully to ${toEmail}`);
       return true;
     } catch (err) {
