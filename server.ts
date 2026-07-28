@@ -841,12 +841,15 @@ console.log("BREVO CHECK", {
   try {
     const transporter = nodemailer.createTransport({
   host: "smtp-relay.brevo.com",
-  port: 587,
+  port: 2525,
   secure: false,
   auth: {
     user,
     pass
   },
+  connectionTimeout: 10000,
+  greetingTimeout: 10000,
+  socketTimeout: 10000,
   logger: true,
   debug: true
 });
