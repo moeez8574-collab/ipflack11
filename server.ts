@@ -835,16 +835,19 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
 
   if (host && user && pass) {
     try {
-   const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+    const transporter = nodemailer.createTransport({
+  host: host || "smtp.gmail.com",
+  port: Number(port) || 587,
+  secure: Number(port) === 465, // Port 465 ho to true, 587 ho to false
+  family: 4,
   auth: {
-    user,
-    pass
+    user: user,
+    pass: pass
   },
-  lookup: (hostname, options, callback) => dns.lookup(hostname, { family: 4 }, callback)
-});
+  tls: {
+    rejectUnauthorized: false
+  }
+});;
 console.log("SMTP DEBUG", {
   user,
   pass: pass ? "FOUND" : "MISSING"
@@ -1178,18 +1181,19 @@ app.post("/api/auth/register", async (req, res) => {
   const emailCode = Math.floor(100000 + Math.random() * 900000).toString();
   const phoneCode = Math.floor(100000 + Math.random() * 900000).toString();
 
- const newUser: any = {
-  id: `user_${Date.now()}`,
-  email,
-  phone,
-  name,
-  role: userRole,
-  password,
-  isEmailVerified: false,
-  isPhoneVerified: true,
-  emailVerificationCode: emailCode,
-  createdAt: new Date().toISOString()
-};
+  const newUser: any = {
+    id: `user_${Date.now()}`,
+    email,
+    phone,
+    name,
+    role: userRole,
+    password,
+    isEmailVerified: false,
+    isPhoneVerified: false,
+    emailVerificationCode: emailCode,
+    phoneOtpCode: phoneCode,
+    createdAt: new Date().toISOString()
+  };
 
   if (userRole === "creator") {
     newUser.socials = socials;
@@ -1309,7 +1313,7 @@ saveDb();
 
 await sendPhoneOtp(phone, code);
 
- // await sendPhoneOtp(phone, phoneCode);
+  //await sendPhoneOtp(phone, phoneCode);
 
   const twilioConfigured = !!(process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN && process.env.TWILIO_PHONE_NUMBER);
   if (!twilioConfigured) {
