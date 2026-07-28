@@ -835,17 +835,18 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
 
   if (host && user && pass) {
     try {
- const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 587,
-  secure: false, // Port 587 ke liye false
-  family: 4,     // 👈 YEH PORTION SAB SE IMPORTANT HAI (IPv4 force karega)
+  port: 465,
+  secure: true,
+  logger: true,
+  debug: true,
   auth: {
     user,
     pass
   },
   tls: {
-    rejectUnauthorized: false
+    rejectUnauthorized: true
   }
 });
 console.log("SMTP DEBUG", {
