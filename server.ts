@@ -848,6 +848,10 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
     rejectUnauthorized: false
   }
 });
+console.log("SMTP DEBUG", {
+  user,
+  pass: pass ? "FOUND" : "MISSING"
+});
 
       await transporter.sendMail({
         from,
@@ -1303,9 +1307,11 @@ app.post("/api/auth/otp/send", async (req, res) => {
   const user = db.users.find(u => u.phone === phone);
   if (!user) return res.status(404).json({ error: "User not found" });
 
-  const code = Math.floor(100000 + Math.random() * 900000).toString();
-  user.phoneOtpCode = code;
-  saveDb();
+ const code = Math.floor(100000 + Math.random() * 900000).toString();
+user.phoneOtpCode = code;
+saveDb();
+
+await sendPhoneOtp(phone, code);
 
   await sendPhoneOtp(phone, phoneCode);
 
