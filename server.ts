@@ -836,19 +836,13 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
   if (host && user && pass) {
     try {
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: "smtp-relay.brevo.com",
   port: 587,
   secure: false,
-  requireTLS: true,
   auth: {
-    user,
-    pass
-  },
-  connectionTimeout: 30000,
-  greetingTimeout: 30000,
-  socketTimeout: 30000,
-  logger: true,
-  debug: true
+    user: process.env.BREVO_USER,
+    pass: process.env.BREVO_PASS
+  }
 });
 console.log("SMTP DEBUG", {
   user,
