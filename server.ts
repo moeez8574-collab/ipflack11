@@ -817,6 +817,10 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
   const port = parseInt(creds?.smtpPort || process.env.SMTP_PORT || "587");
 const user = process.env.BREVO_USER;
 const pass = process.env.BREVO_PASS;
+console.log("BREVO CHECK", {
+  user,
+  pass: pass ? "FOUND" : "MISSING"
+});
   const from = creds?.smtpFrom || process.env.SMTP_FROM || `"IPFLACK Admin" <support@ipflack.online>`;
 
   const subject = type === "verification" 
