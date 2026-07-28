@@ -837,6 +837,8 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
     try {
 const transporter = nodemailer.createTransport({
   service: "gmail",
+  port: 587,
+  secure: false,
   auth: {
     user,
     pass
