@@ -840,23 +840,21 @@ console.log("BREVO CHECK", {
  if (user && pass) {
   try {
 
-   const transporter = nodemailer.createTransport({
-  host: "smtp-relay.brevo.com",
-  port: 587,
-  secure: false,
-  requireTLS: true,
-  family: 4,
-  auth: {
-    user,
-    pass
-  },
-  connectionTimeout: 30000,
-  greetingTimeout: 30000,
-  socketTimeout: 30000,
-  tls: {
-    rejectUnauthorized: false
-  }
-});
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT || 587),
+      secure: false,
+      requireTLS: true,
+      auth: {
+        user,
+        pass
+      },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
+      logger: true,
+      debug: true
+    });
 
     console.log("SMTP DEBUG", {
       host: process.env.SMTP_HOST,
