@@ -809,19 +809,11 @@ async function verifyOtpFromFirestore(identifier: string, code: string, type: "e
 }
 
 async function sendEmailOtp(toEmail: string, name: string, code: string, type: "verification" | "reset") {
-  // Save OTP code to Firestore for backend validation
   await saveOtpToFirestore(toEmail, code, type);
 
-  const creds = db?.settings?.authCredentials;
-  const host = creds?.smtpHost || process.env.SMTP_HOST;
-  const port = parseInt(creds?.smtpPort || process.env.SMTP_PORT || "587");
-const user = creds?.smtpUser || process.env.SMTP_USER;
-const pass = creds?.smtpPass || process.env.SMTP_PASS;
-console.log("BREVO CHECK", {
-  user,
-  pass: pass ? "FOUND" : "MISSING"
-});
-  const from = creds?.smtpFrom || process.env.SMTP_FROM || `"IPFLACK Admin" <support@ipflack.online>`;
+  const apiKey = process.env.BREVO_API_KEY;
+  const fromEmail = db?.settings?.authCredentials?.smtpFrom || process.env.SMTP_FROM || "support@ipflack.online";
+  const fromName = "IPFLACK Admin";
 
   const subject = type === "verification" 
     ? "IPFLACK - Verify Your Email Address" 
@@ -831,58 +823,43 @@ console.log("BREVO CHECK", {
     ? (db?.settings?.emailTemplates?.registrationVerification || "Hello {{name}},\n\nWelcome to IPFLACK! Your verification code is: {{code}}.\n\nBest regards,\nIPFLACK Admin Team")
     : (db?.settings?.emailTemplates?.passwordReset || "Hello {{name}},\n\nYou requested a password reset. Use verification code {{code}} to set a new password.");
 
-  const text = template
-    .replace("{{name}}", name)
-    .replace("{{code}}", code);
+  const text = template.replace("{{name}}", name).replace("{{code}}", code);
 
-  console.log(`[Email OTP] Sending code to: ${toEmail}. Code: ${code}`);
+  console.log(`[Email OTP] Code for ${toEmail}: ${code}`);
 
- if (user && pass) {
-  try {
-
-  const transporter = nodemailer.createTransport({
-  host: "smtp-relay.brevo.com",
-  port: 587,
-  secure: false,
-  requireTLS: true,
-  auth: {
-    user,
-    pass
-  },
-  connectionTimeout: 60000,
-  greetingTimeout: 60000,
-  socketTimeout: 60000
-});
-
-    console.log("SMTP DEBUG", {
-      host: process.env.SMTP_HOST,
-      user,
-      pass: pass ? "FOUND" : "MISSING"
-    });
-
-    await transporter.verify();
-
-    console.log("SMTP Ready");
-
-    await transporter.sendMail({
-      from,
-      to: toEmail,
-      subject,
-      text
-    });
-
-    console.log(`[Email OTP] Real email sent successfully to ${toEmail}`);
-    return true;
-
-  } catch (err) {
-    console.error("[Email OTP] Error sending real email via SMTP:", err);
+  if (!apiKey) {
+    console.log(`[Email OTP] BREVO_API_KEY missing. Dev mode: use code ${code}`);
+    return false;
   }
 
-} else {
-  console.log(`[Email OTP] SMTP credentials not fully configured. Code generated for developer log: ${code}`);
-}
+  try {
+    const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+      method: "POST",
+      headers: {
+        "accept": "application/json",
+        "api-key": apiKey,
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        sender: { name: fromName, email: fromEmail },
+        to: [{ email: toEmail, name: name }],
+        subject: subject,
+        textContent: text
+      })
+    });
 
-return false;
+    if (response.ok) {
+      console.log(`[Email OTP] ✅ Email sent via Brevo API to ${toEmail}`);
+      return true;
+    } else {
+      const err = await response.text();
+      console.error("[Email OTP] Brevo API error:", err);
+      return false;
+    }
+  } catch (err) {
+    console.error("[Email OTP] Brevo API fetch error:", err);
+    return false;
+  }
 }
 async function sendPhoneOtp(toPhone: string, code: string) {
   // Save OTP code to Firestore for backend validation
