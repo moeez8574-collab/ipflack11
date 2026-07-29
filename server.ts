@@ -837,35 +837,34 @@ console.log("BREVO CHECK", {
 
   console.log(`[Email OTP] Sending code to: ${toEmail}. Code: ${code}`);
 
-if (user && pass) {
+ if (user && pass) {
   try {
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT || 587),
       secure: false,
+      requireTLS: true,
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
+        user,
+        pass
       },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
       logger: true,
       debug: true
     });
 
-    console.log("SMTP CHECK:", {
+    console.log("SMTP DEBUG", {
       host: process.env.SMTP_HOST,
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS ? "FOUND" : "MISSING"
+      user,
+      pass: pass ? "FOUND" : "MISSING"
     });
 
     await transporter.verify();
 
     console.log("SMTP Ready");
-
-    console.log("SMTP DEBUG", {
-      user,
-      pass: pass ? "FOUND" : "MISSING"
-    });
 
     await transporter.sendMail({
       from,
@@ -886,7 +885,6 @@ if (user && pass) {
 }
 
 return false;
-
 async function sendPhoneOtp(toPhone: string, code: string) {
   // Save OTP code to Firestore for backend validation
   await saveOtpToFirestore(toPhone, code, "phone");
@@ -991,7 +989,7 @@ function loadDb() {
         const creatorEarnings = o.commissionAmount;
         const totalAffiliateCommission = parseFloat((creatorEarnings / (creatorPct / 100)).toFixed(2));
         const adminEarnings = parseFloat((totalAffiliateCommission - creatorEarnings).toFixed(2));
-    db.earningsLedger.push({
+        db.earningsLedger.push({
           id: `led_${o.id}`,
           orderId: o.orderId,
           userId: o.userId,
