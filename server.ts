@@ -991,7 +991,7 @@ function loadDb() {
         const creatorEarnings = o.commissionAmount;
         const totalAffiliateCommission = parseFloat((creatorEarnings / (creatorPct / 100)).toFixed(2));
         const adminEarnings = parseFloat((totalAffiliateCommission - creatorEarnings).toFixed(2));
-        db.earningsLedger.push({
+    db.earningsLedger.push({
           id: `led_${o.id}`,
           orderId: o.orderId,
           userId: o.userId,
