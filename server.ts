@@ -837,54 +837,55 @@ console.log("BREVO CHECK", {
 
   console.log(`[Email OTP] Sending code to: ${toEmail}. Code: ${code}`);
 
- if (user && pass) {
+if (user && pass) {
   try {
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT || 587),
-  secure: false,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-  logger: true,
-  debug: true
-});
 
-console.log("SMTP CHECK:", {
-  host: process.env.SMTP_HOST,
-  user: process.env.SMTP_USER,
-  pass: process.env.SMTP_PASS ? "FOUND" : "MISSING"
-});
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT || 587),
+      secure: false,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+      logger: true,
+      debug: true
+    });
 
-transporter.verify((err, success) => {
-  if (err) {
-    console.error("VERIFY ERROR:", err);
-  } else {
+    console.log("SMTP CHECK:", {
+      host: process.env.SMTP_HOST,
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS ? "FOUND" : "MISSING"
+    });
+
+    await transporter.verify();
+
     console.log("SMTP Ready");
-  }
-});
-console.log("SMTP DEBUG", {
-  user,
-  pass: pass ? "FOUND" : "MISSING"
-});
+
+    console.log("SMTP DEBUG", {
+      user,
+      pass: pass ? "FOUND" : "MISSING"
+    });
 
     await transporter.sendMail({
-  from,
-  to: toEmail,
-  subject,
-  text
-});
-      console.log(`[Email OTP] Real email sent successfully to ${toEmail}`);
-      return true;
-    } catch (err) {
-      console.error("[Email OTP] Error sending real email via SMTP:", err);
-    }
-  } else {
-    console.log(`[Email OTP] SMTP credentials not fully configured. Code generated for developer log: ${code}`);
+      from,
+      to: toEmail,
+      subject,
+      text
+    });
+
+    console.log(`[Email OTP] Real email sent successfully to ${toEmail}`);
+    return true;
+
+  } catch (err) {
+    console.error("[Email OTP] Error sending real email via SMTP:", err);
   }
-  return false;
+
+} else {
+  console.log(`[Email OTP] SMTP credentials not fully configured. Code generated for developer log: ${code}`);
 }
+
+return false;
 
 async function sendPhoneOtp(toPhone: string, code: string) {
   // Save OTP code to Firestore for backend validation
