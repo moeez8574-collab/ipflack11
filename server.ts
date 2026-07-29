@@ -885,6 +885,7 @@ console.log("BREVO CHECK", {
 }
 
 return false;
+}
 async function sendPhoneOtp(toPhone: string, code: string) {
   // Save OTP code to Firestore for backend validation
   await saveOtpToFirestore(toPhone, code, "phone");
