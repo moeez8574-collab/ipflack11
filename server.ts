@@ -811,9 +811,11 @@ async function verifyOtpFromFirestore(identifier: string, code: string, type: "e
 async function sendEmailOtp(toEmail: string, name: string, code: string, type: "verification" | "reset") {
   await saveOtpToFirestore(toEmail, code, type);
 
-  const apiKey = process.env.BREVO_API_KEY;
-  const fromEmail = db?.settings?.authCredentials?.smtpFrom || process.env.SMTP_FROM || "support@ipflack.online";
-  const fromName = "IPFLACK Admin";
+ const apiKey = process.env.BREVO_API_KEY;
+console.log("BREVO KEY:", apiKey ? apiKey.substring(0, 10) : "MISSING");
+
+const fromEmail = db?.settings?.authCredentials?.smtpFrom || process.env.SMTP_FROM || "support@ipflack.online";
+const fromName = "IPFLACK Admin";
 
   const subject = type === "verification" 
     ? "IPFLACK - Verify Your Email Address" 
