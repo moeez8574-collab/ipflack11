@@ -833,6 +833,7 @@ const fromName = "IPFLACK Admin";
     console.log(`[Email OTP] BREVO_API_KEY missing. Dev mode: use code ${code}`);
     return false;
   }
+  
 
 try {
   const response = await fetch("https://api.brevo.com/v3/smtp/email", {
@@ -871,6 +872,7 @@ try {
 catch (err) {
   console.error("[Email OTP] Brevo API fetch error:", err);
   return false;
+}
 }
 
 async function sendPhoneOtp(toPhone: string, code: string) {
