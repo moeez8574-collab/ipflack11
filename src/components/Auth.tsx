@@ -137,10 +137,13 @@ export default function Auth({ onLoginSuccess }: AuthProps) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Verification failed");
 
-      setMessage("Email verified successfully! Now verifying phone number.");
-      setVerifyingEmail(false);
-      setVerifyingPhone(true);
-      setVerificationCode("");
+      setMessage("Email verified successfully! You can now log in.");
+setVerifyingEmail(false);
+setVerifyingPhone(false);
+setIsLogin(true);
+setEmail(activeVerifyEmail);
+setPassword("");
+setVerificationCode("");
     } catch (err: any) {
       setError(err.message);
     } finally {
