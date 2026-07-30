@@ -844,9 +844,9 @@ try {
     },
     body: JSON.stringify({
       sender: {
-  name: "IP FLACK",
-  email: process.env.BREVO_SENDER_EMAIL
-},
+        name: "IP FLACK",
+        email: process.env.BREVO_SENDER_EMAIL
+      },
       to: [
         {
           email: toEmail,
@@ -860,8 +860,9 @@ try {
 
   const data = await response.json();
   console.log(data);
-} catch (error) {
-  console.error(error);
+
+} catch (err) {
+  console.error("Brevo error:", err);
 }
 
     if (response.ok) {
