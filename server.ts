@@ -1181,21 +1181,19 @@ app.post("/api/auth/register", async (req, res) => {
   }
 
   const emailCode = Math.floor(100000 + Math.random() * 900000).toString();
-  
 
-  const newUser: any = {
-    id: `user_${Date.now()}`,
-    email,
-    phone,
-    name,
-    role: userRole,
-    password,
-    isEmailVerified: false,
-    isPhoneVerified: true,
-    emailVerificationCode: emailCode,
-    
-    createdAt: new Date().toISOString()
-  };
+const newUser = {
+  id: `user_${Date.now()}`,
+  email,
+  phone,
+  name,
+  role: userRole,
+  password,
+  isEmailVerified: false,
+  isPhoneVerified: true,
+  emailVerificationCode: emailCode,
+  createdAt: new Date().toISOString()
+};
 
   if (userRole === "creator") {
     newUser.socials = socials;
@@ -1217,7 +1215,7 @@ app.post("/api/auth/register", async (req, res) => {
 
   // Send real email and SMS OTPs in the background
 sendEmailOtp(email, name, emailCode, "verification")
-  .catch(err => console.log("Email OTP Error:", err));
+.catch(err => console.log("Email OTP Error:", err));
  
 
   const token = generateToken(newUser);
@@ -1348,43 +1346,40 @@ if (isVerifiedInFirestore || (expectedCode && code.toString() === expectedCode.t
 
 app.post("/api/auth/email/verify-code", async (req, res) => {
   const { email, code } = req.body;
-  if (!email || !code) return res.status(400).json({ error: "Email and code required" });
 
   const user = db.users.find(u => u.email === email);
-  if (!user) return res.status(404).json({ error: "User not found" });
 
-  const isVerifiedInFirestore = await verifyOtpFromFirestore(email, code.toString(), "verification");
-  const expectedCode = user.emailVerificationCode;
-
-if (isVerifiedInFirestore || (expectedCode && code.toString() === expectedCode.toString())) {
-    user.isEmailVerified = true;
-    saveDb();
-    return res.json({ success: true, message: "Email verified successfully!" });
+  if (!user) {
+    return res.status(404).json({ error: "User not found" });
   }
-  res.status(400).json({ error: "Invalid verification code." });
-});
 
-app.post("/api/auth/reset-password/request", (req, res) => {
-  const { email } = req.body;
-  if (!email) return res.status(400).json({ error: "Email required" });
+  if (user.emailVerificationCode !== code) {
+    return res.status(400).json({ error: "Invalid verification code" });
+  }
 
-  const user = db.users.find(u => u.email === email);
-  if (!user) return res.status(404).json({ error: "User not found" });
+  user.isEmailVerified = true;
+  user.emailVerificationCode = null;
 
-  const code = Math.floor(100000 + Math.random() * 900000).toString();
-  user.resetPasswordCode = code;
   saveDb();
 
-  sendEmailOtp(email, user.name, code, "reset");
+  const token = generateToken(user);
 
-  const smtpConfigured = !!(process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS);
-  if (!smtpConfigured) {
-    res.json({ success: true, message: "Password reset link sent to " + email + ". (SMTP not configured, use code " + code + " to confirm)" });
-  } else {
-    res.json({ success: true, message: "Password reset link sent to " + email + "." });
-  }
+  res.json({
+    success: true,
+    message: "Email verified successfully",
+    token,
+    user: {
+      id: user.id,
+      email: user.email,
+      phone: user.phone,
+      name: user.name,
+      role: user.role,
+      isEmailVerified: user.isEmailVerified,
+      isPhoneVerified: user.isPhoneVerified,
+      socials: user.socials
+    }
+  });
 });
-
 app.post("/api/auth/reset-password/confirm", async (req, res) => {
   const { email, code, newPassword } = req.body;
   if (!email || !code || !newPassword) return res.status(400).json({ error: "Email, code and new password required" });
