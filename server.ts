@@ -834,21 +834,35 @@ const fromName = "IPFLACK Admin";
     return false;
   }
 
-  try {
-    const response = await fetch("https://api.brevo.com/v3/smtp/email", {
-      method: "POST",
-      headers: {
-        "accept": "application/json",
-        "api-key": apiKey,
-        "content-type": "application/json"
-      },
-      body: JSON.stringify({
-        sender: { name: fromName, email: fromEmail },
-        to: [{ email: toEmail, name: name }],
-        subject: subject,
-        textContent: text
-      })
-    });
+try {
+  const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+    method: "POST",
+    headers: {
+      "accept": "application/json",
+      "api-key": apiKey,
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({
+      sender: {
+  name: "IP FLACK",
+  email: process.env.BREVO_SENDER_EMAIL
+},
+      to: [
+        {
+          email: toEmail,
+          name: name
+        }
+      ],
+      subject: subject,
+      textContent: text
+    })
+  });
+
+  const data = await response.json();
+  console.log(data);
+} catch (error) {
+  console.error(error);
+}
 
     if (response.ok) {
       console.log(`[Email OTP] ✅ Email sent via Brevo API to ${toEmail}`);
