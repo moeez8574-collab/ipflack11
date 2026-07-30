@@ -814,7 +814,7 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
   const apiKey = process.env.BREVO_API_KEY;
   console.log("BREVO KEY:", apiKey ? apiKey.substring(0, 10) : "MISSING");
 
-  const fromEmail = db?.settings?.authCredentials?.smtpFrom || process.env.SMTP_FROM || "support@ipflack.online";
+  const fromEmail = process.env.BREVO_SENDER_EMAIL || "ipflack.pvt@gmail.com";
   const fromName = "IPFLACK Admin";
 
   const subject = type === "verification" 
@@ -843,10 +843,10 @@ async function sendEmailOtp(toEmail: string, name: string, code: string, type: "
         "content-type": "application/json"
       },
       body: JSON.stringify({
-        sender: {
-          name: fromName,        // Use the variable instead of hardcoded string
-          email: fromEmail       // FIX: Use fromEmail instead of process.env.BREVO_SENDER_EMAIL
-        },
+      sender: {
+  name: "IPFLACK Admin",
+  email: fromEmail
+},
         to: [
           {
             email: toEmail,
