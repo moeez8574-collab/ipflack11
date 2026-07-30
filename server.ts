@@ -867,7 +867,8 @@ try {
     return false;
   }
 
-} catch (err) {
+} 
+catch (err) {
   console.error("[Email OTP] Brevo API fetch error:", err);
   return false;
 }
