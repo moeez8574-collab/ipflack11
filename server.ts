@@ -1314,7 +1314,7 @@ app.post("/api/auth/otp/send", async (req, res) => {
 user.phoneOtpCode = code;
 saveDb();
 
-if (phone) {
+if (db.settings.systemSettings.phoneVerificationRequired && phone) {
   await sendPhoneOtp(phone, code);
 }
 
