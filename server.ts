@@ -858,26 +858,20 @@ try {
     })
   });
 
-  const data = await response.json();
-  console.log(data);
-
-} catch (err) {
-  console.error("Brevo error:", err);
-}
-
-    if (response.ok) {
-      console.log(`[Email OTP] ✅ Email sent via Brevo API to ${toEmail}`);
-      return true;
-    } else {
-      const err = await response.text();
-      console.error("[Email OTP] Brevo API error:", err);
-      return false;
-    }
-  } catch (err) {
-    console.error("[Email OTP] Brevo API fetch error:", err);
+  if (response.ok) {
+    console.log(`[Email OTP] ✅ Email sent via Brevo API to ${toEmail}`);
+    return true;
+  } else {
+    const err = await response.text();
+    console.error("[Email OTP] Brevo API error:", err);
     return false;
   }
+
+} catch (err) {
+  console.error("[Email OTP] Brevo API fetch error:", err);
+  return false;
 }
+
 async function sendPhoneOtp(toPhone: string, code: string) {
   // Save OTP code to Firestore for backend validation
   await saveOtpToFirestore(toPhone, code, "phone");
