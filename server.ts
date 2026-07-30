@@ -231,7 +231,7 @@ const DEFAULT_SETTINGS = {
     defaultLanguage: "English",
     registrationOn: true,
     emailVerificationRequired: true,
-    phoneVerificationRequired: true
+   phoneVerificationRequired: false
   },
 
   authCredentials: {
